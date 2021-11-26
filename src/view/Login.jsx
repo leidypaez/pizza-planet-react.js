@@ -3,8 +3,9 @@ import logo from '../img/pizza-planet-black.png';
 import logoNeon from '../img/planeta-neon.png';
 import iconEmail from '../img/user.png';
 import iconPassword from '../img/password.png';
+import { Link } from 'react-router-dom';
 
-function App() {
+function login() {
   return (
     <div className="App">
       <header className="App-header">
@@ -13,10 +14,18 @@ function App() {
       </header>
       <div className="section-login">
         <div>
-          <button className="button-login">Iniciar Sesion</button>
+          <button className="buttons-begin">
+            <Link to="/" className="button-login">
+              Iniciar Sesion
+            </Link>
+          </button>
         </div>
         <div>
-          <button className="button-register">Registrate</button>
+          <button className="buttons-begin">
+            <Link to="/Register" className="button-register">
+              Registrate
+            </Link>
+          </button>
         </div>
         <div className="input-login">
           <img src={iconEmail} className="icon-email" alt="icon-email" />
@@ -34,4 +43,4 @@ function App() {
   );
 }
 
-export default App;
+export default login;

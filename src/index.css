@@ -1,3 +1,4 @@
+/* Fuente de la letra */
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
 
 body {
@@ -10,6 +11,10 @@ body {
   background-image: url(./img/fondo.jpg);
 }
 
+/* tono de los placeholder que estan en los inputs */
+::-webkit-input-placeholder {
+  color: rgb(223, 220, 220);
+}
 /* logo planeta neon */
 .App-logo {
   width: 45%;
@@ -41,6 +46,12 @@ body {
   color: white;
 }
 
+/* botones para no mostrar */
+.buttons-begin {
+  border: none;
+  background: none;
+}
+
 /* boton de iniciar sesion */
 .button-login {
   position: absolute;
@@ -55,6 +66,11 @@ body {
   line-height: 43px;
   color: azure;
   border: none;
+  text-decoration: none;
+}
+
+.button-login:focus {
+  border-bottom:1px solid #fcfbfb;
 }
 
 /* boton de registro */
@@ -70,8 +86,12 @@ body {
   line-height: 43px;
   color: azure;
   border: none;
+  text-decoration: none;
  }
 
+ .button-register:focus {
+  border-bottom:1px solid #fcfbfb;
+ }
 /* backgroud de la seccion de login */
 .section-login {
   background: #7B7A8261;
@@ -97,6 +117,10 @@ body {
   padding-left: 15%;
 }
 
+.input-email:focus {
+  outline: 0 none;
+  color: #fcfbfb;
+}
 .icon-email {
   width: 10%;
   position: absolute;
@@ -121,6 +145,10 @@ body {
   padding-left: 15%;
 }
 
+.input-password:focus {
+  outline: 0 none;
+  color: #fcfbfb;
+}
 .icon-password {
   position: absolute;
   width: 12%;
