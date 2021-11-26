@@ -1,13 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "ABeeZee", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  text-align: center;
+  background-image: url(./img/fondo.jpg);
+}
+
+/* logo planeta neon */
+.App-logo {
+  width: 45%;
+  left: 10px;
+  height: 65vmin;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* logo de pizza planeta pintando en negro */
+.App-logo-pizza {
+  width: 25%;
+  height: 35vmin;
+  pointer-events: none;
+  position: absolute;
+  left: 145px;
+  top: 35%;
+}
+
+.App-header {
+  background-image: url(./img/fondo.jpg);
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* boton de iniciar sesion */
+.button-login {
+  position: absolute;
+  display: flex;
+  background: none;
+  left: 30px;
+  top: 30px;
+  font-family: ABeeZee;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 43px;
+  color: azure;
+  border: none;
+}
+
+/* boton de registro */
+.button-register {
+  position: absolute;
+  background: none;
+  left: 45.95%;
+  top: 30px;
+  font-family: ABeeZee;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 43px;
+  color: azure;
+  border: none;
+ }
+
+/* backgroud de la seccion de login */
+.section-login {
+  background: #7B7A8261;
+  position: absolute;
+  width: 520px;
+  height: 575.85px;
+  left: 740px;
+  top: 254px;
+}
+
+/* estilos del input correo electronico */
+.input-login {
+  position: absolute;
+  top: 35%;
+}
+
+.input-email  {
+  background: none;
+  border: none;
+  border-bottom:1px solid #fcfbfb;
+  font-size: 30px;
+  margin-left: 45px;
+  padding-left: 15%;
+}
+
+.icon-email {
+  width: 10%;
+  position: absolute;
+  left: 12%;
+  right: 36.27%;
+  top: -40%;
+  bottom: 50.79%;
+}
+
+/* estilos del input de contraseña */
+.input-register {
+  position: absolute;
+  top: 53%;
+}
+
+.input-password {
+  background: none;
+  border: none;
+  border-bottom:1px solid #fcfbfb;
+  font-size: 30px;
+  margin-left: 45px;
+  padding-left: 15%;
+}
+
+.icon-password {
+  position: absolute;
+  width: 12%;
+  left: 12%;
+  right: 36.27%;
+  top: -50%;
+  bottom: 50.79%;
+}
+/* boton de iniciar sesion */
+.btn-login {
+  position: absolute;
+  width: 374px;
+  height: 75px;
+  left: 13%;
+  top: 70%;
+  background: linear-gradient(89.5deg, #269731 28.66%, #24ACF9 75.26%);
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-size: 50px;
+  font-family: "ABeeZee", sans-serif;
+}
+
+/* animacion del logo de iniciar sesion y de registro */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
