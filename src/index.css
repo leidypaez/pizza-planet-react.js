@@ -17,9 +17,9 @@ body {
 }
 /* logo planeta neon */
 .App-logo {
-  width: 45%;
-  left: 10px;
-  height: 65vmin;
+  width: 50%;
+  left: 8px;
+  height: 70vmin;
   position: absolute;
   pointer-events: none;
 }
@@ -30,7 +30,7 @@ body {
   height: 35vmin;
   pointer-events: none;
   position: absolute;
-  left: 145px;
+  left: 170px;
   top: 35%;
 }
 
@@ -170,6 +170,10 @@ body {
   color: white;
   font-size: 50px;
   font-family: "ABeeZee", sans-serif;
+}
+
+.btn-login:hover {
+  background: linear-gradient(89.5deg, #CC30E6 18.53%, #698DEB 56.52%, #24ACF9 88.94%);
 }
 
 /* animacion del logo de iniciar sesion y de registro */

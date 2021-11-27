@@ -3,8 +3,10 @@ import React from 'react';
 import '../css/register.css';
 import logo from '../img/pizza-planet-black.png';
 import logoNeon from '../img/planeta-neon.png';
-import iconEmail from '../img/user.png';
+import iconUser from '../img/user.png';
 import iconPassword from '../img/password.png';
+import iconEmail from '../img/email.png';
+import iconConfirmPassword from '../img/confirm-password.png';
 
 const register = () => {
   return (
@@ -28,17 +30,31 @@ const register = () => {
             </Link>
           </button>
         </div>
-        <div className="input">
-          <img src={iconEmail} className="icon-email" alt="icon-email" />
-          <input type="text" className="input-email" placeholder="Correo Electronico"/>
+
+        <div className="input-name-user">
+          <img src={iconUser} className="icon-user" alt="icon-user" />
+          <input type="text" className="input-user" placeholder="Nombre Completo"/>
         </div>
-        <div className="input">
-          <img src={iconPassword} alt="icon-password" className="icon-password"/>
-          <input type="password" className="input-password" id="" placeholder="Contraseña"/>
-        </div>
+
         <div>
-          <button className="btn-register-here">Iniciar Sesion</button>
+          <img src={iconEmail} className="icon-register-email" alt="icon-email" />
+          <input type="text" className="input-register-email" placeholder="Correo Electronico"/>
         </div>
+
+        <div className="">
+          <img src={iconPassword} alt="icon-password" className="icon-register-password"/>
+          <input type="password" className="input-register-password" id="" placeholder="Contraseña"/>
+        </div>
+
+        <div className="">
+          <img src={iconConfirmPassword} className="icon-confirm-password" alt="icon-email" />
+          <input type="text" className="input-confirm-password" placeholder="Confirmar Contraseña"/>
+        </div>
+
+        <div>
+          <button className="btn-register-here">Registrate</button>
+        </div>
+
       </div>
     </div>
   )

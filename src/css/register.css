@@ -1,1 +1,122 @@
+/* input del nombre del usuario */
+.input-user {
+  position: absolute;
+  background: none;
+  border: none;
+  border-bottom:1px solid #fcfbfb;
+  font-size: 30px;
+  margin-left: -210px;
+  padding-left: 12%;
+  padding-right: -5%;
+  top: 23.80%;
+}
 
+.icon-user {
+  width:8%;
+  position: absolute;
+  left: 12%;
+  right: 36.27%;
+  top: 21.55%;
+  bottom: 50.79%;
+}
+
+.input-user:focus {
+  outline: 0;
+  color: white;
+}
+
+/* input del email de registro */
+.input-register-email {
+  position: absolute;
+  background: none;
+  border: none;
+  border-bottom:1px solid #fcfbfb;
+  font-size: 30px;
+  margin-left: -208px;
+  padding-left: 12%;
+  top: 35%;
+}
+
+.input-register-email:focus {
+  outline: 0;
+  color: white;
+}
+.icon-register-email {
+  position: absolute;
+  width: 9%;
+  left: 12%;
+  right: 36.27%;
+  top: 35%;
+  bottom: 50.79%;
+}
+ /* input contraseña seccion registro */
+.input-register-password {
+  position: absolute;
+  background: none;
+  border: none;
+  border-bottom:1px solid #fcfbfb;
+  font-size: 30px;
+  margin-left: -210px;
+  padding-left: 12%;
+  top: 46.55%;
+}
+
+.icon-register-password {
+  height: 8%;
+  width: 11%;
+  position: absolute;
+  left: 11%;
+  right: 36.27%;
+  top: 44%;
+  bottom: 50.79%;
+}
+
+.input-register-password:focus {
+  outline: 0;
+  color: white;
+}
+
+/* input para la confirmacion de la contraseña */
+.input-confirm-password {
+  position: absolute;
+  background: none;
+  border: none;
+  border-bottom:1px solid #fcfbfb;
+  font-size: 30px;
+  margin-left: -210px;
+  padding-left: 12%;
+  top: 59%;
+}
+
+.input-confirm-password:focus {
+  outline: 0;
+  color: white;
+}
+.icon-confirm-password {
+  height: 8%;
+  width: 11%;
+  position: absolute;
+  left: 11%;
+  right: 36.27%;
+  top: 56%;
+  bottom: 50.79%;
+}
+
+/* boton de registrate */
+.btn-register-here {
+  position: absolute;
+  width: 372px;
+  height: 83px;
+  left: 15%;
+  top: 75%;
+  background: linear-gradient(89.5deg, #CC30E6 18.53%, #698DEB 56.52%, #24ACF9 88.94%);
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-size: 50px;
+  font-family: "ABeeZee", sans-serif;
+}
+
+.btn-register-here:hover {
+  background: linear-gradient(89.5deg, #269731 28.66%, #24ACF9 75.26%);
+}
